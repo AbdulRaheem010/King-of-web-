@@ -60,7 +60,7 @@ Custom Web Development: We build fully customized websites from scratch, designe
 	<aside id="sidebar">
 	<div class="dark">
 	<h3>Get A Quote</h3>
-	<form class="quote">
+	<form class="quote" id="quote-form" action="script.php" method="POST">
 	
 	<div>
 	<label for="Name">NAME:</label>
@@ -71,10 +71,14 @@ Custom Web Development: We build fully customized websites from scratch, designe
 	<label for="email">Email:</label>
         <input type="email" id="email" placeholder="Example@gmail.com"name="email" required>
 	</div>
+	<div>
+		<label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone">
+		</div>
 	
 	<div>
-	<label>Message </label>
-	<textarea placeholder="Message"> </textarea>
+	<label for="details">Project Details:</label>
+  <textarea id="details" name="details" rows="4" required></textarea>
 	</div>
 	<button type="submit" class="button_1">Send </button>
 	</form>
