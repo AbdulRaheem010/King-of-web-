@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = htmlspecialchars($_POST['phone']);
     $details = htmlspecialchars($_POST['details']);
 
-    $to = "abubakarabdulraheem16@gmail.com";  // Replace with your email
+    $to = "abubakarabdulraheem16@gmail.com";
     $subject = "New Quote Request from " . $name;
     $message = "Name: " . $name . "\n"
              . "Email: " . $email . "\n"
